@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.hidden {
+  display: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button {
+  border: none;
+  background: #f0f0f0;
+}
+
+body {
+  width: 1000px;
+  height: 700px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#leftWrap {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  margin-right: 150px;
+
+}
+
+#circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #fac370;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Righteous', cursive;
+  font-size: 50px;
+}
+
+#sum {
+  font-size: 30px;
+}
+
+/* right */
+
+#rightWrap {
+  width: 300px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.list {
+  width: 200px;
+  height: 80px;
+  overflow: auto;
+  margin: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 15px;
+  /* background: black; */
+}
+
+.list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 15px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+.list::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px white;
+}
+
+.list button {
+  border-radius: 30%;
+}
+
+p {
+  display: block;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.todo ul li span {
+  margin: 0 5px 1px;
+}
+
+/* .box {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 1px solid #333;
+} */
+
+input {
+  border-width: 0 0 3px 0;
+  border-style: solid;
+  border-color: #c4c2c2;
+  height: 20px;
+  margin: 5px 0;
+  /* font-family: 'Righteous', cursive; */
+}
+
+input:focus {
+  /* background: #f0f0f0; */
+  outline: 0;
+  border-color: #fac370;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+input[type="checkbox"]:checked {
+  background: #fac370;
+  border: none;
+}

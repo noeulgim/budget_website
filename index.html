@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>budget management</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/initial.min.css">
+  </head>
+  <body>
+    <div id="leftWrap">
+      <div id="circle" onclick="alertCircle()">
+        <div id="log"></div>
+        <div id="sum"></div>
+      </div>
+      <div id="accountBar">
+        <span>in</span>
+        <div id="inBar" class="bar"></div>
+        <span>essential out</span>
+        <div id="essentialOutBar" class="bar"></div>
+        <span>out</span>
+        <div id="outBar" class="bar"></div>
+      </div>
+    </div>
+    <div id="rightWrap">
+      <div class="box">
+      </div>
+      <div class="todo first">
+        <p>in</p>
+        <form id="todo-form-first">
+          <input type="number" required>
+        </form>
+        <div class="list">
+          <ul id="todo-list"></ul>
+        </div>
+      </div>
+      <div class="todo second">
+        <p>essential out</p>
+        <form id="todo-form-second">
+          <input type="number" required>
+        </form>
+        <div class="list">
+          <ul id="todo-list-second"></ul>
+        </div>
+      </div>
+      <div class="todo third">
+        <p>out</p>
+        <form id="todo-form-third">
+          <input type="number" required>
+        </form>
+        <div class="list">
+          <ul id="todo-list-third"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/todo_plus.js"></script>
+    <script src="./js/todo_essential_minus.js"></script>
+    <script src="./js/todo_minus.js"></script>
+    <script src="./js/circle.js"></script>
+    <script src="./js/account_bar.js"></script>
+  </body>
+</html>
